@@ -1,10 +1,14 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Labas Studio | Women's Collection</title>
+<title>LIBAS OUTFIT | Pakistani Fashion</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -18,463 +22,525 @@ html{
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:#faf7f4;
-    color:#2b211d;
+    background:#f7f5f2;
+    color:#191715;
+    font-family:"DM Sans",sans-serif;
 }
 
-/* TOP BAR */
-.top-bar{
-    background:#2b211d;
-    color:white;
-    padding:8px 6%;
-    display:flex;
-    justify-content:space-between;
-    font-size:12px;
+img{
+    display:block;
+    width:100%;
 }
 
-/* HEADER */
-header{
-    background:white;
-    padding:18px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
+a{
+    color:inherit;
+    text-decoration:none;
 }
 
-.logo{
-    font-family:Georgia,serif;
-    font-size:29px;
+button{
+    font-family:inherit;
+}
+
+.container{
+    width:min(1240px,92%);
+    margin:auto;
+}
+
+/* ================= TOP BAR ================= */
+
+.topbar{
+    background:#181614;
+    color:#fff;
+    text-align:center;
+    padding:9px;
+    font-size:9px;
     letter-spacing:3px;
 }
 
-.logo small{
-    display:block;
-    font-family:Arial,sans-serif;
-    font-size:10px;
-    letter-spacing:2px;
-    color:#806f66;
-    margin-top:4px;
+/* ================= HEADER ================= */
+
+header{
+    background:rgba(255,255,255,.96);
+    border-bottom:1px solid #e8e3dd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(10px);
 }
 
-nav{
+.nav{
+    height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-box{
+    width:42px;
+    height:42px;
+    border:1px solid #201d1a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Playfair Display",serif;
+    font-size:14px;
+}
+
+.logo-title{
+    font-family:"Playfair Display",serif;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+.logo-sub{
+    color:#9a9188;
+    font-size:7px;
+    letter-spacing:3px;
+    margin-top:3px;
+}
+
+.nav-links{
     display:flex;
     gap:28px;
 }
 
-nav a{
-    color:#2b211d;
-    text-decoration:none;
-    font-size:14px;
-}
-
-nav a:hover{
-    color:#8a6857;
-}
-
-.header-icons{
-    display:flex;
-    gap:15px;
-    align-items:center;
-}
-
-.icon-btn{
-    background:none;
-    border:none;
-    font-size:22px;
-    cursor:pointer;
-    position:relative;
-}
-
-.badge{
-    position:absolute;
-    top:-7px;
-    right:-8px;
-    background:#2b211d;
-    color:white;
-    width:18px;
-    height:18px;
-    border-radius:50%;
+.nav-links a{
     font-size:10px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
 }
 
-/* HERO */
+.nav-links a:hover{
+    color:#9d8053;
+}
+
+.whatsapp{
+    background:#191715;
+    color:white;
+    padding:12px 17px;
+    font-size:9px;
+    letter-spacing:1.2px;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-    min-height:55vh;
+    min-height:650px;
+    position:relative;
     display:flex;
-    justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:60px 20px;
+    overflow:hidden;
+    background:#26221e;
+}
+
+.hero-image{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(90deg,rgba(0,0,0,.70),rgba(0,0,0,.18)),
+        url("images/IMG_7580.jpeg") center/cover no-repeat;
 }
 
 .hero-content{
-    max-width:750px;
+    position:relative;
+    color:#fff;
+    max-width:650px;
+    padding:90px 0;
+}
+
+.hero-small{
+    font-size:10px;
+    letter-spacing:4px;
+    margin-bottom:18px;
 }
 
 .hero h1{
-    font-family:Georgia,serif;
-    font-size:60px;
-    letter-spacing:4px;
-    margin-bottom:15px;
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:clamp(50px,7vw,88px);
+    line-height:1.02;
 }
 
 .hero p{
-    color:#6b5c54;
-    font-size:17px;
-    line-height:1.8;
-    margin-bottom:28px;
+    max-width:510px;
+    color:#e9e6e2;
+    font-size:13px;
+    line-height:1.9;
+    margin-top:22px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
 }
 
 .btn{
-    display:inline-block;
-    background:#2b211d;
-    color:white;
-    padding:14px 32px;
-    border-radius:4px;
-    text-decoration:none;
-    font-size:13px;
-    letter-spacing:.5px;
+    padding:14px 23px;
+    font-size:9px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
 }
 
-.btn:hover{
-    background:#5b4032;
-}
-
-/* COLLECTION */
-.collection{
-    padding:70px 6%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:35px;
-}
-
-.section-title h2{
-    font-family:Georgia,serif;
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.section-title p{
-    color:#806f66;
-}
-
-/* SEARCH */
-.search-box{
-    max-width:450px;
-    margin:0 auto 40px;
-}
-
-.search-box input{
-    width:100%;
-    padding:14px 20px;
-    border:1px solid #ddd0c9;
-    outline:none;
-    border-radius:30px;
+.btn-white{
     background:white;
-    font-size:14px;
+    color:#171513;
 }
 
-/* GALLERY */
-.gallery{
+.btn-border{
+    border:1px solid white;
+    color:white;
+}
+
+/* ================= BENEFITS ================= */
+
+.benefits{
+    background:#fff;
+    border-bottom:1px solid #e5dfd8;
+}
+
+.benefit-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:22px;
+}
+
+.benefit{
+    text-align:center;
+    padding:24px 10px;
+    border-right:1px solid #e5dfd8;
+}
+
+.benefit:last-child{
+    border-right:0;
+}
+
+.benefit strong{
+    display:block;
+    font-size:9px;
+    letter-spacing:1.4px;
+}
+
+.benefit span{
+    color:#918b84;
+    font-size:9px;
+    margin-top:5px;
+    display:block;
+}
+
+/* ================= SALE STRIP ================= */
+
+.sale-strip{
+    background:#eee8e0;
+    text-align:center;
+    padding:44px 20px;
+}
+
+.sale-strip small{
+    color:#a18357;
+    letter-spacing:4px;
+    font-size:9px;
+}
+
+.sale-strip h2{
+    font-family:"Playfair Display",serif;
+    font-size:42px;
+    font-weight:500;
+    margin:7px 0;
+}
+
+.sale-strip p{
+    color:#77716c;
+    font-size:11px;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    padding:85px 0;
+}
+
+.section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:30px;
+    margin-bottom:34px;
+}
+
+.eyebrow{
+    color:#a18357;
+    font-size:9px;
+    letter-spacing:4px;
+    margin-bottom:9px;
+}
+
+.section-head h2{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:46px;
+}
+
+.section-head p{
+    color:#77716c;
+    font-size:11px;
+    line-height:1.8;
+    max-width:400px;
+}
+
+/* ================= PRODUCT GRID ================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
 .card{
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 4px 18px rgba(0,0,0,.08);
-    transition:.3s;
-    position:relative;
+    background:#fff;
+    border:1px solid #e3ddd6;
+    transition:.3s ease;
 }
 
 .card:hover{
     transform:translateY(-5px);
+    box-shadow:0 18px 45px rgba(0,0,0,.09);
 }
 
-.image-box{
+.card-image{
     position:relative;
+    aspect-ratio:4/5;
     overflow:hidden;
+    background:#eeeae5;
 }
 
-.card img{
+.card-image img{
     width:100%;
-    height:390px;
-    object-fit:cover;
-    display:block;
-    cursor:pointer;
-}
-
-.wishlist{
-    position:absolute;
-    top:12px;
-    right:12px;
-    width:38px;
-    height:38px;
-    border-radius:50%;
-    border:none;
-    background:white;
-    font-size:21px;
-    cursor:pointer;
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
-    z-index:2;
-}
-
-.wishlist.active{
-    color:#9b2c2c;
-}
-
-.new-badge{
-    position:absolute;
-    top:12px;
-    left:12px;
-    background:#2b211d;
-    color:white;
-    padding:7px 10px;
-    border-radius:3px;
-    font-size:10px;
-    letter-spacing:1px;
-    z-index:2;
-}
-
-.card-info{
-    padding:16px;
-    text-align:center;
-}
-
-.card-info h3{
-    font-family:Georgia,serif;
-    font-size:18px;
-    margin-bottom:7px;
-}
-
-.card-info span{
-    color:#806f66;
-    font-size:13px;
-}
-
-.price{
-    font-weight:bold;
-    font-size:18px;
-    margin-top:9px;
-    color:#2b211d;
-}
-
-.card-actions{
-    display:flex;
-    gap:8px;
-    margin-top:15px;
-}
-
-.qty{
-    display:flex;
-    border:1px solid #ddd0c9;
-    border-radius:5px;
-    overflow:hidden;
-}
-
-.qty button{
-    width:30px;
-    border:none;
-    background:#faf7f4;
-    cursor:pointer;
-    font-size:16px;
-}
-
-.qty span{
-    width:28px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#2b211d;
-}
-
-.cart-btn{
-    flex:1;
-    border:none;
-    background:#2b211d;
-    color:white;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:12px;
-}
-
-.cart-btn:hover{
-    background:#5b4032;
-}
-
-/* FEATURES */
-.features{
-    margin:30px 6% 70px;
-    padding:30px;
-    background:#f2ebe5;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-    text-align:center;
-}
-
-.feature-icon{
-    font-size:29px;
-    margin-bottom:10px;
-}
-
-.feature h3{
-    font-family:Georgia,serif;
-    margin-bottom:6px;
-}
-
-.feature p{
-    font-size:12px;
-    color:#806f66;
-}
-
-/* CART */
-.cart-overlay{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.45);
-    z-index:2500;
-}
-
-.cart-overlay.open{
-    display:block;
-}
-
-.cart-panel{
-    position:fixed;
-    right:-430px;
-    top:0;
-    width:410px;
-    max-width:92%;
     height:100%;
-    background:white;
-    z-index:3000;
-    box-shadow:-5px 0 25px rgba(0,0,0,.2);
-    transition:.3s;
-    padding:25px;
-    overflow-y:auto;
+    object-fit:cover;
+    transition:.5s ease;
 }
 
-.cart-panel.open{
-    right:0;
+.card:hover .card-image img{
+    transform:scale(1.035);
 }
 
-.cart-header{
+.badge{
+    position:absolute;
+    top:13px;
+    left:13px;
+    z-index:3;
+    background:#fff;
+    padding:7px 10px;
+    font-size:8px;
+    letter-spacing:1.5px;
+}
+
+.badge.dark{
+    background:#181614;
+    color:#fff;
+}
+
+.quick{
+    position:absolute;
+    left:12px;
+    right:12px;
+    bottom:12px;
+    border:0;
+    background:rgba(255,255,255,.94);
+    padding:13px;
+    cursor:pointer;
+    font-size:8px;
+    letter-spacing:2px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.category{
+    color:#a18357;
+    font-size:8px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.card h3{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:23px;
+    margin:7px 0;
+}
+
+.description{
+    color:#77716c;
+    font-size:10px;
+    line-height:1.7;
+    min-height:35px;
+}
+
+.specs{
+    border-top:1px solid #e6e0d9;
+    margin-top:17px;
+    padding-top:15px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.spec{
+    color:#77716c;
+    font-size:9px;
+}
+
+.spec strong{
+    display:block;
+    color:#1b1917;
+    font-size:7px;
+    letter-spacing:1.2px;
+    margin-bottom:3px;
+}
+
+.card-bottom{
+    margin-top:19px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom:1px solid #eee;
-    padding-bottom:15px;
-    margin-bottom:20px;
 }
 
-.cart-header h2{
-    font-family:Georgia,serif;
+.label{
+    font-size:8px;
+    letter-spacing:1.4px;
 }
 
-.close-cart{
-    border:none;
-    background:none;
-    font-size:28px;
-    cursor:pointer;
+.order{
+    background:#181614;
+    color:#fff;
+    padding:10px 14px;
+    font-size:8px;
+    letter-spacing:1px;
 }
 
-.cart-empty{
-    text-align:center;
-    color:#806f66;
-    margin-top:50px;
+/* ================= SUMMER ================= */
+
+.summer{
+    background:#fff;
 }
 
-.cart-item{
+/* ================= PREMIUM ================= */
+
+.premium{
+    background:#eee9e3;
+}
+
+.premium-note{
+    border-left:2px solid #a18357;
+    padding-left:14px;
+    color:#77716c;
+    font-size:10px;
+    line-height:1.7;
+}
+
+/* ================= WINTER ================= */
+
+.winter{
+    background:#e6e2dd;
+}
+
+.winter-intro{
+    background:#181614;
+    color:#fff;
+    padding:43px;
+    margin-bottom:35px;
+}
+
+.winter-intro h2{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:43px;
+}
+
+.winter-intro p{
+    color:#bdb7b1;
+    max-width:590px;
+    font-size:11px;
+    line-height:1.8;
+    margin-top:9px;
+}
+
+/* ================= FABRIC BANNER ================= */
+
+.fabric-banner{
+    margin-top:30px;
+    min-height:280px;
     display:flex;
-    gap:12px;
-    padding:13px 0;
-    border-bottom:1px solid #eee;
+    align-items:center;
+    background:
+        linear-gradient(90deg,rgba(24,22,20,.76),rgba(24,22,20,.15)),
+        url("images/IMG_7579.jpeg") center/cover;
+    color:#fff;
 }
 
-.cart-item img{
-    width:65px;
-    height:80px;
-    object-fit:cover;
-    border-radius:5px;
+.fabric-content{
+    padding:50px;
+    max-width:600px;
 }
 
-.cart-item-info{
-    flex:1;
+.fabric-content h2{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:42px;
 }
 
-.cart-item-info h4{
-    font-family:Georgia,serif;
-    margin-bottom:5px;
-}
-
-.cart-item-info p{
-    font-size:12px;
-    color:#806f66;
-    margin:3px 0;
-}
-
-.remove-item{
-    border:none;
-    background:none;
-    color:#9b2c2c;
-    cursor:pointer;
-    font-size:12px;
-    margin-top:5px;
-}
-
-.cart-total{
-    margin-top:20px;
-    padding-top:15px;
-    border-top:1px solid #ddd;
-    display:flex;
-    justify-content:space-between;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.order-title{
-    margin-top:25px;
-    font-family:Georgia,serif;
-    font-size:17px;
-}
-
-.whatsapp-btn{
-    display:block;
-    width:100%;
-    border:none;
+.fabric-content p{
+    color:#eee;
+    font-size:11px;
+    line-height:1.8;
     margin-top:10px;
-    padding:13px;
-    border-radius:5px;
-    background:#2b211d;
-    color:white;
-    cursor:pointer;
-    font-size:13px;
 }
 
-.whatsapp-btn:hover{
-    background:#5b4032;
+/* ================= ABOUT ================= */
+
+.about{
+    background:#fff;
 }
 
-/* FOOTER */
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image{
+    min-height:480px;
+    background:url("images/IMG_7570.jpeg") center/cover no-repeat;
+}
+
+.about-text h2{
+    font-family:"Playfair Display",serif;
+    font-weight:500;
+    font-size:51px;
+}
+
+.about-text p{
+    color:#77716c;
+    font-size:12px;
+    line-height:1.9;
+    margin-top:17px;
+}
+
+/* ================= FOOTER ================= */
+
 footer{
-    background:#1d1613;
-    color:#d8ccc5;
-    padding:45px 6% 20px;
+    background:#181614;
+    color:white;
+    padding:60px 0 25px;
 }
 
 .footer-grid{
@@ -483,212 +549,256 @@ footer{
     gap:40px;
 }
 
-footer h3{
-    color:white;
-    font-family:Georgia,serif;
+.footer-logo{
+    font-family:"Playfair Display",serif;
+    font-size:26px;
+    letter-spacing:2px;
+}
+
+footer h4{
+    font-size:9px;
+    letter-spacing:2px;
     margin-bottom:15px;
 }
 
 footer p,
 footer a{
-    color:#cfc3bd;
-    font-size:13px;
-    line-height:2;
-    text-decoration:none;
+    color:#aaa39d;
+    font-size:10px;
+    line-height:1.9;
+}
+
+footer a{
+    display:block;
+    margin:6px 0;
 }
 
 .copyright{
-    border-top:1px solid #493b35;
-    margin-top:35px;
+    border-top:1px solid #393633;
+    margin-top:45px;
     padding-top:20px;
+    color:#77716c;
     text-align:center;
-    font-size:12px;
+    font-size:8px;
+    letter-spacing:1px;
 }
 
-/* LIGHTBOX */
-.lightbox{
-    display:none;
+/* ================= MODAL ================= */
+
+.modal{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,.9);
-    z-index:5000;
+    background:rgba(0,0,0,.75);
+    display:none;
     justify-content:center;
     align-items:center;
     padding:20px;
+    z-index:5000;
 }
 
-.lightbox img{
-    max-width:90%;
-    max-height:90%;
-    border-radius:8px;
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    width:min(900px,100%);
+    background:#fff;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    max-height:90vh;
+    overflow:auto;
+    position:relative;
+}
+
+.modal-photo{
+    min-height:550px;
+}
+
+.modal-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.modal-body{
+    padding:45px;
+}
+
+.modal-body h2{
+    font-family:"Playfair Display",serif;
+    font-size:37px;
+    font-weight:500;
+    margin:9px 0;
+}
+
+.modal-body p{
+    color:#77716c;
+    font-size:11px;
+    line-height:1.8;
 }
 
 .close{
     position:absolute;
-    top:20px;
-    right:30px;
-    color:white;
-    font-size:40px;
+    top:10px;
+    right:10px;
+    width:34px;
+    height:34px;
+    background:#fff;
+    border:0;
     cursor:pointer;
+    font-size:21px;
+    z-index:5;
 }
 
-/* MOBILE */
-@media(max-width:1000px){
-    .gallery{
-        grid-template-columns:repeat(3,1fr);
-    }
+/* ================= RESPONSIVE ================= */
 
-    .features{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
+@media(max-width:900px){
 
-@media(max-width:700px){
-
-    .top-bar{
-        font-size:8px;
-        gap:5px;
-    }
-
-    header{
-        padding:15px 5%;
-    }
-
-    .logo{
-        font-size:21px;
-    }
-
-    .logo small{
-        font-size:8px;
-    }
-
-    nav{
+    .nav-links{
         display:none;
     }
 
-    .header-icons{
-        gap:9px;
+    .products{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .hero{
-        min-height:45vh;
+    .benefit-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .hero h1{
-        font-size:40px;
-    }
-
-    .hero p{
-        font-size:14px;
-    }
-
-    .collection{
-        padding:50px 4%;
-    }
-
-    .section-title h2{
-        font-size:32px;
-    }
-
-    .gallery{
-        grid-template-columns:1fr 1fr;
-        gap:12px;
-    }
-
-    .card img{
-        height:250px;
-    }
-
-    .card-info{
-        padding:10px 5px;
-    }
-
-    .card-info h3{
-        font-size:14px;
-    }
-
-    .price{
-        font-size:15px;
-    }
-
-    .card-actions{
-        flex-direction:column;
-    }
-
-    .qty{
-        justify-content:center;
-    }
-
-    .cart-btn{
-        padding:10px;
-    }
-
-    .features{
-        grid-template-columns:1fr 1fr;
-        margin:20px 4% 50px;
-        padding:15px;
+    .benefit:nth-child(2){
+        border-right:0;
     }
 
     .footer-grid{
         grid-template-columns:1fr 1fr;
     }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
 }
 
-@media(max-width:450px){
+@media(max-width:600px){
+
+    .whatsapp{
+        display:none;
+    }
+
+    .hero{
+        min-height:570px;
+    }
+
+    .hero h1{
+        font-size:49px;
+    }
+
+    .hero-buttons{
+        flex-wrap:wrap;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+    .section-head{
+        display:block;
+    }
+
+    .section-head h2{
+        font-size:37px;
+    }
+
+    .section-head p{
+        margin-top:13px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .winter-intro{
+        padding:30px;
+    }
+
+    .winter-intro h2{
+        font-size:36px;
+    }
+
+    .fabric-content{
+        padding:30px;
+    }
+
+    .fabric-content h2{
+        font-size:35px;
+    }
 
     .footer-grid{
         grid-template-columns:1fr;
     }
 
-    .hero h1{
-        font-size:34px;
+    .modal-box{
+        grid-template-columns:1fr;
+    }
+
+    .modal-photo{
+        min-height:350px;
+    }
+
+    .modal-body{
+        padding:30px;
     }
 }
 </style>
 </head>
 
+
 <body>
 
 <!-- TOP BAR -->
-<div class="top-bar">
-    <span>✓ All Sizes Available</span>
-    <span>✦ Premium Quality</span>
-    <span>Rs. 2,500</span>
-    <span>WhatsApp Orders</span>
+<div class="topbar">
+    LIBAS OUTFIT • ELEGANT PAKISTANI FASHION
 </div>
 
 
 <!-- HEADER -->
 <header>
 
-    <div class="logo">
-        LABAS STUDIO
-        <small>WOMEN'S COLLECTION</small>
-    </div>
+<div class="container nav">
 
-    <nav>
+    <a href="#home" class="logo">
+
+        <div class="logo-box">LO</div>
+
+        <div>
+            <div class="logo-title">LIBAS OUTFIT</div>
+            <div class="logo-sub">FASHION • STYLE • YOU</div>
+        </div>
+
+    </a>
+
+
+    <nav class="nav-links">
+
         <a href="#home">Home</a>
-        <a href="#collection">Collection</a>
-        <a href="#contact">Contact</a>
+        <a href="#summer">Summer Sale</a>
+        <a href="#premium">Premium</a>
+        <a href="#winter">Winter</a>
+        <a href="#about">About</a>
+
     </nav>
 
-    <div class="header-icons">
 
-        <button class="icon-btn" onclick="focusSearch()">
-            🔍
-        </button>
+    <a
+        class="whatsapp"
+        href="https://wa.me/923083531929"
+        target="_blank">
 
-        <button class="icon-btn" onclick="showWishlist()">
-            ♡
-            <span class="badge" id="wishCount">0</span>
-        </button>
+        WHATSAPP ORDER
 
-        <button class="icon-btn" onclick="openCart()">
-            🛒
-            <span class="badge" id="cartCount">0</span>
-        </button>
+    </a>
 
-    </div>
+</div>
 
 </header>
 
@@ -696,681 +806,1174 @@ footer a{
 <!-- HERO -->
 <section class="hero" id="home">
 
-    <div class="hero-content">
+<div class="hero-image"></div>
 
-        <h1>Labas Studio</h1>
+<div class="container">
 
-        <p>
-            Discover our elegant women's collection,
-            thoughtfully selected for a graceful and modern look.
-        </p>
+<div class="hero-content">
 
-        <a href="#collection" class="btn">
-            EXPLORE COLLECTION
+    <div class="hero-small">
+        LIBAS OUTFIT • PAKISTANI FASHION
+    </div>
+
+    <h1>
+        Designed<br>
+        For Elegance
+    </h1>
+
+    <p>
+        Discover graceful Pakistani outfits,
+        beautiful colours and carefully selected
+        fabrics — made for your everyday elegance.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#summer" class="btn btn-white">
+            Shop Summer Sale
+        </a>
+
+        <a href="#premium" class="btn btn-border">
+            Explore Premium
         </a>
 
     </div>
 
+</div>
+
+</div>
+
 </section>
 
 
-<!-- COLLECTION -->
-<section class="collection" id="collection">
+<!-- BENEFITS -->
+<section class="benefits">
 
-    <div class="section-title">
+<div class="container benefit-grid">
 
-        <h2>Our Collection</h2>
+    <div class="benefit">
+        <strong>QUALITY FABRICS</strong>
+        <span>Selected with care</span>
+    </div>
+
+    <div class="benefit">
+        <strong>3 PIECE SUITS</strong>
+        <span>Complete outfit</span>
+    </div>
+
+    <div class="benefit">
+        <strong>WHATSAPP ORDER</strong>
+        <span>Simple & easy</span>
+    </div>
+
+    <div class="benefit">
+        <strong>LIBAS OUTFIT</strong>
+        <span>Elegant fashion</span>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SALE -->
+<section class="sale-strip">
+
+    <small>LIMITED TIME</small>
+
+    <h2>Summer Sale</h2>
+
+    <p>
+        Fresh summer styles at special sale prices.
+    </p>
+
+</section>
+
+
+<!-- ================= SUMMER ================= -->
+
+<section class="section summer" id="summer">
+
+<div class="container">
+
+<div class="section-head">
+
+    <div>
+
+        <div class="eyebrow">
+            SUMMER COLLECTION
+        </div>
+
+        <h2>Summer Sale</h2>
+
+    </div>
+
+    <p>
+        Two selected summer suits in fresh,
+        graceful colours.
+    </p>
+
+</div>
+
+
+<div class="products">
+
+
+<!-- PISTA -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge dark">
+        SALE
+    </span>
+
+    <img
+        src="images/IMG_7575.jpeg"
+        alt="Pista">
+
+    <button
+        class="quick"
+        onclick="openProduct('pista')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Summer • Sale
+    </div>
+
+    <h3>Pista</h3>
+
+    <p class="description">
+        Fresh pista coloured summer outfit
+        with a graceful appearance.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            Pista
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Summer
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+        <div class="spec">
+            <strong>INCLUDES</strong>
+            Shirt + Trouser + Dupatta
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            SUMMER SALE
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20Pista%20Summer%20Suit">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+
+<!-- PINK SUMMER -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge dark">
+        SALE
+    </span>
+
+    <img
+        src="images/IMG_7578.jpeg"
+        alt="Pink">
+
+    <button
+        class="quick"
+        onclick="openProduct('pinksummer')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Summer • Sale
+    </div>
+
+    <h3>Pink</h3>
+
+    <p class="description">
+        Elegant pink summer outfit with
+        a soft feminine appearance.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            Pink
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Summer
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+        <div class="spec">
+            <strong>INCLUDES</strong>
+            Shirt + Trouser + Dupatta
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            SUMMER SALE
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20Pink%20Summer%20Suit">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PREMIUM ================= -->
+
+<section class="section premium" id="premium">
+
+<div class="container">
+
+<div class="section-head">
+
+    <div>
+
+        <div class="eyebrow">
+            PREMIUM COLLECTION
+        </div>
+
+        <h2>Premium Chiffon</h2>
+
+    </div>
+
+    <div class="premium-note">
+        2 Premium Suits<br>
+        Both in Chiffon
+    </div>
+
+</div>
+
+
+<div class="products">
+
+
+<!-- PINK PREMIUM -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge">
+        PREMIUM
+    </span>
+
+    <img
+        src="images/IMG_7579.jpeg"
+        alt="Pink Premium">
+
+    <button
+        class="quick"
+        onclick="openProduct('pinkpremium')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Premium • Chiffon
+    </div>
+
+    <h3>Pink Premium</h3>
+
+    <p class="description">
+        Premium pink chiffon outfit with
+        an elegant refined finish.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>FABRIC</strong>
+            Chiffon
+        </div>
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            Pink
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Premium
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            PREMIUM
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20Pink%20Premium%20Chiffon">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+
+<!-- BLACK & WHITE PREMIUM -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge">
+        PREMIUM
+    </span>
+
+    <img
+        src="images/IMG_7577.jpeg"
+        alt="Black & White">
+
+    <button
+        class="quick"
+        onclick="openProduct('blackwhite')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Premium • Chiffon
+    </div>
+
+    <h3>Black & White</h3>
+
+    <p class="description">
+        Premium black and white chiffon
+        design with an elegant finish.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>FABRIC</strong>
+            Chiffon
+        </div>
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            Black & White
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Premium
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            PREMIUM
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20Black%20and%20White%20Premium%20Chiffon">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FABRIC BANNER -->
+
+<section class="fabric-banner">
+
+<div class="container">
+
+<div class="fabric-content">
+
+    <div class="eyebrow">
+        LIBAS OUTFIT
+    </div>
+
+    <h2>
+        Designed For Elegance
+    </h2>
+
+    <p>
+        Beautiful fabrics, graceful details and
+        timeless Pakistani style come together
+        to create a refined Libas Outfit.
+    </p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WINTER ================= -->
+
+<section class="section winter" id="winter">
+
+<div class="container">
+
+
+<div class="winter-intro">
+
+    <div class="eyebrow">
+        WINTER COLLECTION
+    </div>
+
+    <h2>
+        Winter Edit
+    </h2>
+
+    <p>
+        Discover our winter designs featuring
+        elegant prints, embroidery and seasonal
+        fabrics including Lilan and Marina.
+    </p>
+
+</div>
+
+
+<div class="section-head">
+
+    <div>
+
+        <div class="eyebrow">
+            WINTER • LILAN • MARINA
+        </div>
+
+        <h2>
+            Winter Collection
+        </h2>
+
+    </div>
+
+    <p>
+        Remaining winter designs from Libas Outfit.
+    </p>
+
+</div>
+
+
+<div class="products">
+
+
+<!-- BLACK & PINK -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge">
+        WINTER
+    </span>
+
+    <img
+        src="images/IMG_7580.jpeg"
+        alt="Black & Pink Floral">
+
+    <button
+        class="quick"
+        onclick="openProduct('blackpink')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Winter
+    </div>
+
+    <h3>Black & Pink Floral</h3>
+
+    <p class="description">
+        Beautiful black and pink floral
+        winter design.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            Black & Pink
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Winter
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+        <div class="spec">
+            <strong>FABRIC</strong>
+            Winter Fabric
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            WINTER
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20Black%20and%20Pink%20Floral">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+
+<!-- WHITE RED BLACK -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge">
+        WINTER
+    </span>
+
+    <img
+        src="images/IMG_7571.jpeg"
+        alt="White Red & Black">
+
+    <button
+        class="quick"
+        onclick="openProduct('whiteredblack')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Winter
+    </div>
+
+    <h3>White Red & Black</h3>
+
+    <p class="description">
+        White, red and black printed
+        winter design.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            White Red & Black
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Winter
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+        <div class="spec">
+            <strong>FABRIC</strong>
+            Winter Fabric
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            WINTER
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20White%20Red%20and%20Black">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+
+<!-- PEACH -->
+
+<article class="card">
+
+<div class="card-image">
+
+    <span class="badge">
+        WINTER
+    </span>
+
+    <img
+        src="images/IMG_7570.jpeg"
+        alt="Peach Embroidered">
+
+    <button
+        class="quick"
+        onclick="openProduct('peach')">
+
+        QUICK VIEW
+
+    </button>
+
+</div>
+
+
+<div class="card-body">
+
+    <div class="category">
+        Winter
+    </div>
+
+    <h3>Peach Embroidered</h3>
+
+    <p class="description">
+        Elegant peach embroidered winter
+        design.
+    </p>
+
+
+    <div class="specs">
+
+        <div class="spec">
+            <strong>COLOR</strong>
+            Peach
+        </div>
+
+        <div class="spec">
+            <strong>COLLECTION</strong>
+            Winter
+        </div>
+
+        <div class="spec">
+            <strong>STYLE</strong>
+            3 Piece
+        </div>
+
+        <div class="spec">
+            <strong>FABRIC</strong>
+            Winter Fabric
+        </div>
+
+    </div>
+
+
+    <div class="card-bottom">
+
+        <span class="label">
+            WINTER
+        </span>
+
+        <a
+            class="order"
+            target="_blank"
+            href="https://wa.me/923083531929?text=I%20want%20to%20order%20Peach%20Embroidered">
+
+            ORDER
+
+        </a>
+
+    </div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+<div class="container about-grid">
+
+    <div class="about-image"></div>
+
+    <div class="about-text">
+
+        <div class="eyebrow">
+            ABOUT LIBAS OUTFIT
+        </div>
+
+        <h2>
+            Grace In Every Detail
+        </h2>
 
         <p>
-            Elegant Styles • All Sizes Available • Rs. 2,500
+            Libas Outfit brings together elegant
+            Pakistani fashion, beautiful colours
+            and carefully selected fabrics.
+        </p>
+
+        <p>
+            From our Summer Sale to Premium Chiffon
+            and Winter Collection, every design is
+            selected for a graceful and timeless look.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+    <div>
+
+        <div class="footer-logo">
+            LIBAS OUTFIT
+        </div>
+
+        <p>
+            Elegant Pakistani fashion designed
+            for every beautiful moment.
         </p>
 
     </div>
 
 
-    <div class="search-box">
+    <div>
 
-        <input
-            id="searchInput"
-            type="text"
-            placeholder="Search collection..."
-            oninput="searchProducts()"
-        >
+        <h4>SHOP</h4>
+
+        <a href="#summer">Summer Sale</a>
+        <a href="#premium">Premium</a>
+        <a href="#winter">Winter</a>
+
+    </div>
+
+
+    <div>
+
+        <h4>COLLECTIONS</h4>
+
+        <a href="#summer">Summer</a>
+        <a href="#premium">Chiffon</a>
+        <a href="#winter">Lilan</a>
+        <a href="#winter">Marina</a>
 
     </div>
 
 
-    <div class="gallery" id="gallery"></div>
+    <div>
 
-</section>
+        <h4>ORDER</h4>
 
+        <a
+            href="https://wa.me/923083531929"
+            target="_blank">
 
-<!-- FEATURES -->
-<section class="features">
+            WhatsApp
 
-    <div class="feature">
-        <div class="feature-icon">🚚</div>
-        <h3>Delivery</h3>
-        <p>Delivery available across Pakistan</p>
-    </div>
-
-    <div class="feature">
-        <div class="feature-icon">✦</div>
-        <h3>Premium Quality</h3>
-        <p>Elegant fabrics and beautiful finishing</p>
-    </div>
-
-    <div class="feature">
-        <div class="feature-icon">✓</div>
-        <h3>All Sizes</h3>
-        <p>All sizes are available</p>
-    </div>
-
-    <div class="feature">
-        <div class="feature-icon">☎</div>
-        <h3>WhatsApp Orders</h3>
-        <p>Contact us for your order</p>
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer id="contact">
-
-    <div class="footer-grid">
-
-        <div>
-            <h3>LABAS STUDIO</h3>
-            <p>Premium Women's Collection</p>
-            <p>All Sizes Available</p>
-            <p>Price: Rs. 2,500</p>
-        </div>
-
-        <div>
-            <h3>Quick Links</h3>
-            <p><a href="#home">Home</a></p>
-            <p><a href="#collection">Collection</a></p>
-        </div>
-
-        <div>
-            <h3>Customer Service</h3>
-            <p>WhatsApp Orders</p>
-            <p>All Sizes Available</p>
-            <p>Delivery Across Pakistan</p>
-        </div>
-
-        <div>
-            <h3>Contact Us</h3>
-            <p>03083531929</p>
-            <p>03089081970</p>
-        </div>
+        </a>
 
     </div>
-
-    <div class="copyright">
-        © 2026 Labas Studio — Women's Collection
-    </div>
-
-</footer>
-
-
-<!-- CART OVERLAY -->
-<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
-
-
-<!-- CART PANEL -->
-<div class="cart-panel" id="cartPanel">
-
-    <div class="cart-header">
-
-        <h2>Your Cart</h2>
-
-        <button class="close-cart" onclick="closeCart()">
-            ×
-        </button>
-
-    </div>
-
-    <div id="cartItems"></div>
-
-    <div id="cartBottom"></div>
 
 </div>
 
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
+<div class="container copyright">
 
-    <span class="close" onclick="closeImage()">×</span>
+    © 2026 LIBAS OUTFIT • ALL RIGHTS RESERVED
 
-    <img
-        id="largeImage"
-        src=""
-        alt="Labas Studio Dress"
-    >
+</div>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+    <button class="close" onclick="closeProduct()">×</button>
+
+    <div class="modal-photo">
+
+        <img id="modalImage" src="" alt="">
+
+    </div>
+
+
+    <div class="modal-body">
+
+        <div class="eyebrow" id="modalCategory">
+            LIBAS OUTFIT
+        </div>
+
+        <h2 id="modalTitle">
+            Product
+        </h2>
+
+        <p id="modalDescription">
+            Elegant Libas Outfit design.
+        </p>
+
+
+        <div class="specs">
+
+            <div class="spec">
+                <strong>FABRIC</strong>
+                <span id="modalFabric"></span>
+            </div>
+
+            <div class="spec">
+                <strong>COLOR</strong>
+                <span id="modalColor"></span>
+            </div>
+
+            <div class="spec">
+                <strong>COLLECTION</strong>
+                <span id="modalCollection"></span>
+            </div>
+
+            <div class="spec">
+                <strong>STYLE</strong>
+                3 Piece
+            </div>
+
+        </div>
+
+
+        <a
+            id="modalOrder"
+            class="order"
+            target="_blank"
+            style="display:inline-block;margin-top:28px;"
+            href="#">
+
+            ORDER ON WHATSAPP
+
+        </a>
+
+    </div>
+
+</div>
 
 </div>
 
 
 <script>
 
-const gallery = document.getElementById("gallery");
+const products = {
 
-const PRICE = 2500;
+    pista:{
+        title:"Pista",
+        image:"images/IMG_7575.jpeg",
+        category:"SUMMER • SALE",
+        fabric:"Summer Fabric",
+        color:"Pista",
+        collection:"Summer",
+        description:"Fresh pista coloured summer outfit with a graceful appearance."
+    },
 
-const WHATSAPP_1 = "923083531929";
-const WHATSAPP_2 = "923089081970";
+    pinksummer:{
+        title:"Pink",
+        image:"images/IMG_7578.jpeg",
+        category:"SUMMER • SALE",
+        fabric:"Summer Fabric",
+        color:"Pink",
+        collection:"Summer",
+        description:"Elegant pink summer outfit with a soft feminine appearance."
+    },
 
-let cart = [];
-let wishlist = [];
+    pinkpremium:{
+        title:"Pink Premium",
+        image:"images/IMG_7579.jpeg",
+        category:"PREMIUM • CHIFFON",
+        fabric:"Chiffon",
+        color:"Pink",
+        collection:"Premium",
+        description:"Premium pink chiffon outfit with an elegant refined finish."
+    },
 
+    blackwhite:{
+        title:"Black & White",
+        image:"images/IMG_7577.jpeg",
+        category:"PREMIUM • CHIFFON",
+        fabric:"Chiffon",
+        color:"Black & White",
+        collection:"Premium",
+        description:"Premium black and white chiffon design with an elegant finish."
+    },
 
-/* CREATE PRODUCTS */
+    blackpink:{
+        title:"Black & Pink Floral",
+        image:"images/IMG_7580.jpeg",
+        category:"WINTER",
+        fabric:"Winter Fabric",
+        color:"Black & Pink",
+        collection:"Winter",
+        description:"Beautiful black and pink floral winter design."
+    },
 
-for(let i = 0; i < 27; i++){
+    whiteredblack:{
+        title:"White Red & Black",
+        image:"images/IMG_7571.jpeg",
+        category:"WINTER",
+        fabric:"Winter Fabric",
+        color:"White Red & Black",
+        collection:"Winter",
+        description:"White, red and black printed winter design."
+    },
 
-    let fileName = `dress (${i + 2}).jpeg`;
-
-    let card = document.createElement("div");
-
-    card.className = "card";
-
-    card.dataset.name =
-        `Labas Studio Dress ${i + 1}`;
-
-    card.innerHTML = `
-
-        <div class="image-box">
-
-            <span class="new-badge">
-                NEW ARRIVAL
-            </span>
-
-            <button
-                class="wishlist"
-                onclick="toggleWishlist(${i}, this)"
-            >
-                ♡
-            </button>
-
-            <img
-                src="images/${fileName}"
-                alt="Labas Studio Dress"
-                onclick="openImage(this.src)"
-                onerror="this.parentElement.parentElement.style.display='none'"
-            >
-
-        </div>
-
-
-        <div class="card-info">
-
-            <h3>
-                Labas Studio Dress ${i + 1}
-            </h3>
-
-            <span>
-                All Sizes Available
-            </span>
-
-            <div class="price">
-                Rs. 2,500
-            </div>
-
-
-            <div class="card-actions">
-
-                <div class="qty">
-
-                    <button onclick="changeQty(${i}, -1)">
-                        −
-                    </button>
-
-                    <span id="qty-${i}">
-                        1
-                    </span>
-
-                    <button onclick="changeQty(${i}, 1)">
-                        +
-                    </button>
-
-                </div>
-
-
-                <button
-                    class="cart-btn"
-                    onclick="addToCart(${i}, '${fileName}')"
-                >
-                    🛒 Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-    `;
-
-    gallery.appendChild(card);
-}
-
-
-/* QUANTITY */
-
-function changeQty(index, amount){
-
-    let element =
-        document.getElementById(`qty-${index}`);
-
-    let current =
-        parseInt(element.innerText);
-
-    current += amount;
-
-    if(current < 1){
-        current = 1;
+    peach:{
+        title:"Peach Embroidered",
+        image:"images/IMG_7570.jpeg",
+        category:"WINTER",
+        fabric:"Winter Fabric",
+        color:"Peach",
+        collection:"Winter",
+        description:"Elegant peach embroidered winter design."
     }
 
-    element.innerText = current;
-}
+};
 
 
-/* ADD TO CART */
+function openProduct(id){
 
-function addToCart(index, fileName){
+    const product = products[id];
 
-    let qty =
-        parseInt(
-            document.getElementById(`qty-${index}`).innerText
+    if(!product) return;
+
+    document.getElementById("modalImage").src = product.image;
+
+    document.getElementById("modalImage").alt =
+        product.title;
+
+    document.getElementById("modalTitle").textContent =
+        product.title;
+
+    document.getElementById("modalCategory").textContent =
+        product.category;
+
+    document.getElementById("modalDescription").textContent =
+        product.description;
+
+    document.getElementById("modalFabric").textContent =
+        product.fabric;
+
+    document.getElementById("modalColor").textContent =
+        product.color;
+
+    document.getElementById("modalCollection").textContent =
+        product.collection;
+
+    document.getElementById("modalOrder").href =
+        "https://wa.me/923083531929?text=" +
+        encodeURIComponent(
+            "Assalam o Alaikum, I want to order " +
+            product.title +
+            " from Libas Outfit."
         );
 
-    let existing =
-        cart.find(item => item.index === index);
-
-    if(existing){
-
-        existing.qty += qty;
-
-    }else{
-
-        cart.push({
-            index:index,
-            fileName:fileName,
-            name:`Labas Studio Dress ${index + 1}`,
-            qty:qty,
-            price:PRICE
-        });
-
-    }
-
-    updateCart();
-
-    openCart();
+    document.getElementById("modal").classList.add("show");
 }
 
 
-/* UPDATE CART */
-
-function updateCart(){
-
-    let totalItems = 0;
-    let totalPrice = 0;
-
-    cart.forEach(item => {
-
-        totalItems += item.qty;
-
-        totalPrice +=
-            item.qty * item.price;
-
-    });
-
-
-    document.getElementById("cartCount").innerText =
-        totalItems;
-
-
-    let container =
-        document.getElementById("cartItems");
-
-    let bottom =
-        document.getElementById("cartBottom");
-
-
-    if(cart.length === 0){
-
-        container.innerHTML = `
-            <div class="cart-empty">
-                Your cart is empty.
-            </div>
-        `;
-
-        bottom.innerHTML = "";
-
-        return;
-    }
-
-
-    container.innerHTML = "";
-
-
-    cart.forEach((item, position) => {
-
-        let div =
-            document.createElement("div");
-
-        div.className = "cart-item";
-
-        div.innerHTML = `
-
-            <img
-                src="images/${item.fileName}"
-                alt="${item.name}"
-            >
-
-            <div class="cart-item-info">
-
-                <h4>
-                    ${item.name}
-                </h4>
-
-                <p>
-                    Size: All Sizes Available
-                </p>
-
-                <p>
-                    Rs. 2,500 × ${item.qty}
-                </p>
-
-                <p>
-                    Subtotal:
-                    Rs. ${(item.price * item.qty).toLocaleString()}
-                </p>
-
-                <button
-                    class="remove-item"
-                    onclick="removeFromCart(${position})"
-                >
-                    Remove
-                </button>
-
-            </div>
-
-        `;
-
-        container.appendChild(div);
-
-    });
-
-
-    bottom.innerHTML = `
-
-        <div class="cart-total">
-
-            <span>Total</span>
-
-            <span>
-                Rs. ${totalPrice.toLocaleString()}
-            </span>
-
-        </div>
-
-
-        <div class="order-title">
-            Order on WhatsApp
-        </div>
-
-
-        <button
-            class="whatsapp-btn"
-            onclick="orderWhatsApp('${WHATSAPP_1}')"
-        >
-            WhatsApp: 03083531929
-        </button>
-
-
-        <button
-            class="whatsapp-btn"
-            onclick="orderWhatsApp('${WHATSAPP_2}')"
-        >
-            WhatsApp: 03089081970
-        </button>
-
-    `;
-
-}
-
-
-/* REMOVE FROM CART */
-
-function removeFromCart(position){
-
-    cart.splice(position,1);
-
-    updateCart();
-}
-
-
-/* OPEN CART */
-
-function openCart(){
+function closeProduct(){
 
     document
-        .getElementById("cartPanel")
-        .classList.add("open");
-
-    document
-        .getElementById("cartOverlay")
-        .classList.add("open");
-
-    updateCart();
-}
-
-
-/* CLOSE CART */
-
-function closeCart(){
-
-    document
-        .getElementById("cartPanel")
-        .classList.remove("open");
-
-    document
-        .getElementById("cartOverlay")
-        .classList.remove("open");
+        .getElementById("modal")
+        .classList
+        .remove("show");
 
 }
 
 
-/* WHATSAPP ORDER */
+document
+    .getElementById("modal")
+    .addEventListener("click",function(e){
 
-function orderWhatsApp(number){
-
-    if(cart.length === 0){
-
-        alert("Your cart is empty.");
-
-        return;
-    }
-
-
-    let message =
-        "Assalam o Alaikum Labas Studio,%0A%0A" +
-        "I want to place an order:%0A%0A";
-
-
-    cart.forEach(item => {
-
-        message +=
-            item.name +
-            " - Qty: " +
-            item.qty +
-            " - Rs. " +
-            (item.price * item.qty).toLocaleString() +
-            "%0A";
-
-    });
-
-
-    let total =
-        cart.reduce(
-            (sum,item) =>
-                sum + item.price * item.qty,
-            0
-        );
-
-
-    message +=
-        "%0ATotal: Rs. " +
-        total.toLocaleString() +
-        "%0A%0A" +
-        "Please confirm my order.";
-
-
-    window.open(
-        `https://wa.me/${number}?text=${message}`,
-        "_blank"
-    );
-
-}
-
-
-/* WISHLIST */
-
-function toggleWishlist(index, button){
-
-    if(wishlist.includes(index)){
-
-        wishlist =
-            wishlist.filter(
-                item => item !== index
-            );
-
-        button.classList.remove("active");
-
-    }else{
-
-        wishlist.push(index);
-
-        button.classList.add("active");
-
-    }
-
-
-    document.getElementById("wishCount").innerText =
-        wishlist.length;
-}
-
-
-/* SEARCH */
-
-function searchProducts(){
-
-    let search =
-        document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase();
-
-
-    let cards =
-        document.querySelectorAll(".card");
-
-
-    cards.forEach(card => {
-
-        let name =
-            card.dataset.name.toLowerCase();
-
-
-        if(name.includes(search)){
-
-            card.style.display = "";
-
-        }else{
-
-            card.style.display = "none";
-
+        if(e.target === this){
+            closeProduct();
         }
 
     });
 
-}
 
+document.addEventListener("keydown",function(e){
 
-/* SEARCH ICON */
-
-function focusSearch(){
-
-    document
-        .getElementById("collection")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
-
-    setTimeout(() => {
-
-        document
-            .getElementById("searchInput")
-            .focus();
-
-    },500);
-
-}
-
-
-/* WISHLIST ICON */
-
-function showWishlist(){
-
-    if(wishlist.length === 0){
-
-        alert(
-            "Your wishlist is empty."
-        );
-
-    }else{
-
-        alert(
-            `You have ${wishlist.length} item(s) in your wishlist.`
-        );
-
+    if(e.key === "Escape"){
+        closeProduct();
     }
 
-}
-
-
-/* IMAGE LIGHTBOX */
-
-function openImage(src){
-
-    document
-        .getElementById("largeImage")
-        .src = src;
-
-    document
-        .getElementById("lightbox")
-        .style.display = "flex";
-
-}
-
-
-function closeImage(){
-
-    document
-        .getElementById("lightbox")
-        .style.display = "none";
-
-}
-
-
-/* INITIAL CART */
-
-updateCart();
+});
 
 </script>
 
 </body>
 </html>
-
-    
